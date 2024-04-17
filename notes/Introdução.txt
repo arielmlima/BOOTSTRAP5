@@ -1,0 +1,11 @@
+AULA 1 - BOOTSTRAP
+
+Oque é o Bootstrap? Framework CSS mais usado no mundo, focado em responsividade, com recursos para padronizar designs e resolver as diferenças de layout entre sites para dispositivos moveis e telas grandes.
+
+ Possuindo varias classes CSS prontas para uso, resolvendo problemas comuns a todo designer de páginas web.
+
+ Surgiu em 2011, código aberto, gratuito.
+
+ 
+
+ 
