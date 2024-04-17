@@ -1,0 +1,13 @@
+AULA 2 
+
+Instalar o NODE.js
+
+Instalar o Vscode.
+
+Instalei algumas extensões:
+
+Intellisense for Css class names in html
+Bootstrap 5 & Font Awesome Snippet
+Sass 
+live Sass Compiler
+

@@ -1,0 +1,21 @@
+AULA 3
+
+Abre o replit, novo projeto HTML CSS JS.
+
+Exclui o CSS e o JS.
+
+Vamos fazer do jeito mais facil de referenciar, usando associação CDN:
+
+Vai no site do bootrap 5: getbootstrap.com 
+
+Desce na home page mesmo la em baixo tem uma parte chamada include via CDN:
+
+Copia o primeiro link que é do arquivo CSS principal do bootstrap 5.
+
+Cola em cima do title.
+
+Copia o segundo link do arquivo JS bootstrap, cola em baixo do link do css.
+
+Copia todo código, e no vscode funciona igual.
+
+Abre o live server para visualizar.
