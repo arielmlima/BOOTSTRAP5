@@ -1,0 +1,58 @@
+AULA 06
+
+#Contêineres Responsivos
+
+ Classes: 
+
+container
+container-fluid
+container-{breakpoint}
+
+#CONTEINERES
+
+
+CLASSES          |EXTRASMALL|  SMALL  |  MEDIUM   |   LARGE   |  X-LARGE  |  XX-LARGE
+                 | <576px   |  >=576px|   >=768px |  >=992px  | >=1200px  |  >=1400px
+------------------------------------------------------------------------------------------
+.container       |  100%    |   540px |   720px   |   960px   |  1140px   |    1320px
+.container-sm    |  100%    |   540px |   720px   |   960px   |  1140px   |    1320px
+.container-md    |  100%    |   100%  |   720px   |   960px   |  1140px   |    1320px
+.container-lg    |  100%    |   100%  |   100%    |   960px   |  1140px   |    1320px
+.container-xl    |  100%    |   100%  |   100%    |   100%    |  1140px   |    1320px
+.container-xxl   |  100%    |   100%  |   100%    |   100%    |  100%     |    1320px
+.container-fluid |  100%    |   100%  |   100%    |   100%    |  100%     |    100% 
+
+
+Existindo dois tipos de containers: De largura total e de largura responsiva.
+
+O de largura total é representado pelo container-fluid, independentemente da largura da tela esse container sempre vai ocupar 100% da altura disponivel.
+E as outras seis classes ja se comportam de maneira responsiva.
+
+
+Como ler essa tabela acima? 
+
+Exemplo criei um container, e estou acessando de uma tela maior que 1400px, logo esse container vai ter 1320px. E segue essa lógica.
+
+
+As mais usadas são container e container-fluid, porem temos as outras para usar tambem.
+
+É importante lembrar que containers devem ser usados ​​em layouts de sites.
+
+
+Exemplo container:
+
+<!-- container-fluid: Fazer o container ocupar toda a largura disponivel da tela independente de qual largura seja, 
+ bg-info faz o background ficar a cor info(azul claro), 
+container ele fica com uma largura fixa e centralizado na página, 
+container lg visualizando de uma tela maior ou igual a 992px deixa de ocupar 100% da largura e passa a ocupar 960px de largura   --> 
+
+Exemplo vscode:
+
+<body>
+    <div class="container-fluid bg-info">  
+    
+        <h1>Conteineres</h1>
+        <hr>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ut autem voluptate reiciendis dolor. Libero consectetur iusto nemo quidem, obcaecati veritatis, debitis voluptates qui excepturi voluptate asperiores nihil nisi! Odit sapiente quod natus sint, ipsum quo dolorum sit. Ipsum, doloremque repudiandae. Consequuntur praesentium id unde magni itaque ipsum aspernatur maxime?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita facere commodi odit iure, cum atque, quae quam velit at sapiente ea. Repellat quidem minima nemo suscipit porro quae nesciunt!</p>
+    </div>
