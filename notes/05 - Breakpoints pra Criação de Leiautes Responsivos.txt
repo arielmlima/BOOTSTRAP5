@@ -1,0 +1,38 @@
+AULA 5
+
+#BREAKPOINTS: Layout responsivos
+
+No proprio site do bootstrap vai na sessão layout, e la vai ter os breakpoints.
+
+Se o site for só pensado para telas pequenas, telas maiores vão ter dificuldade para navegar no seu site, e vice versa.
+
+Ai que entra o layout's responsivos: Permite criar diferentes layouts para diferentes resoluções de telas.
+O bootstrap prioriza o mobile first: priorizando sempre começar pela tela menor, e você tem que adicionar os breakpoints, quando quiser aplicar estilos aplicaveis em resoluções especificas.
+
+ Para dominar a responsividade temos que estudar os Breakpoints:
+  Representam diferentes larguras de telas encontradas padronizadas no mercado.
+
+#TABELA COM 6 POSSIVEIS VALORES DE BREAKPOINTS
+
+BREAKPOINT        |  INFIXO DE CLASSE    | DIMENSÕES
+
+Extra-pequeno     | Nenhum               | <576px         //Abrange telas menores que 576px
+Pequeno           | sm                   | >=576px        //Abrange telas maior ou igual a 576px
+Médio             | md                   | >=768px        //Abrange telas maior ou igual a 768px
+Grande            | lg                   | >=992px        //Abrange telas maior ou igual a 992px
+Extra-Grande      | xl                   | >=1200px       //Abrange telas maior ou igual a 1200px
+Extra-extra-grande| xxl                  | >=1400px       ////Abrange telas maior ou igual a 1400px
+
+#INFIXOS DE CLASSE
+
+m-5             //Adiciona uma margem de 5 unidades em bootstrap em torno contorno do elemento que usa essa classe. Não possuindo infixo ela é uma classe extra pequena.(
+p-sm-3          //Adiciona uma margem de tres unidades no paragrafo quando a tela for pequena.(sm)
+col-lg-2        //Duas colunas de largura quando a tela for Grande(lg)
+fs-md-6         //Equivale a definir o tamanho de fonte igual a 6 quando a resolução estiver no tamanho médio(md)
+text-xl-end     //Alinhar um elemento de texto a direita quando a tela for extra large(xl)
+
+No código:
+
+<div class="text-center text-md-start text-xl-end text-xxl-start">            //Vai fazer automaticamente todos os breakpoints nessa div.
+       lorem*100
+    </div>
