@@ -1,0 +1,52 @@
+AULA 4
+
+Note que o link css via cdn, ele tem escrito @5.3.3
+
+Caso um dia essa versão atualize, e eu queira que o bootstrap atualize junto, basta eu tirar essa parte, senão ele vai se manter na versão anterior.
+
+Ou caso eu queria que rode com a versão atual da versão 5: @5
+
+Versão mais atual da versão 4: @4
+
+e por ai vai. 
+
+No link CDN do Script do mesmo jeito: @5
+
+Deixa so a informação de maior versão.
+
+Note que clicando com control nesses links, conseguimos ver que as versões são diferentes e se esta funcionando.
+
+Se a página não precisar de Javascript não precisa nem adicionar o script, vai ser um peso morto pra sua pagina, atrasando o carregamento.
+
+Atributos dentro: integrity = so para garantir que a origem do arquivo é genuina. E o crossorigin.
+
+Abrimos o terminal para fazer do outro modo, instalando localmente os arquivos:
+
+Códigos para digitar no terminal powershell para instalar:
+
+cd exercicios
+cd..
+npm install bootstrap@5
+
+Como agora se trata de um arquivo local, não preciso daqueles atributos citados antes: integrity e crossorigin pode tirar. 
+
+<!-- CSS BOOTSRAP LOCALMENTE -->
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- SCRIPT BOOTSRAP LOCALMENTE: ANTES DO FECHAMENTO DA TAG BODY -->
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+Quando uso o bootstrap.min eu estou usando todos os arquivos em um arquivo unico minificado, com legibilidade melhor.
+A principio não precisa se preocupar com isso vamos usar so o: bootstrap.min.css
+                                                               bootstrap.min.js
+
+Vantagens e desvantagens:
+
+Para criar: Local
+Para publicar: Via CDN
+
+Para estudos é legal usar localmente você não depende de internet, e fazendo modificações fica mais facil para consultar o código a ser modificado. 
+Para publicar algo, a trabalho divulgar por CDN é interessante, com um servidor rápido que dificilmente vai cair, alem de poupar tráfego no servidor do seu proprio site, deixar ele mais navegavel.
+E o cache ainda ajuda em várias questões.
+
+Usufruindo do melhor dos dois mundos.
