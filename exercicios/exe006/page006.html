@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script> 
+    <style>
+        .row {
+            height: 200px;
+            background-color: aliceblue;
+        }
+        .col-3 {
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black;
+        }
+    </style>
+    <title>Formatação de Colunas: Deslocamento</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-3 offset-1">DIV 1</div>  
+            <!-- OFFSET: Aqui tenho o afastamento de uma coluna para a esquerda -->
+            <div class="col-3 offset-2">DIV 2</div>
+            <!-- Aqui o afastamento de duas colunas -->
+            <div class="col-3 offset-1">DIV 3</div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<!-- Note que somando a coluna e os offsets da para saber quando a linha vai quebrar. -->

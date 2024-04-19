@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script> 
+    <style>
+        .row {
+            height: 200px;
+            background-color: aliceblue;
+        }
+        .col-3 {
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black;
+        }
+    </style>
+    <title>Formatação de Colunas Soltas</title>
+</head>
+<body>
+    <div class="container">
+        
+            <div class="col-3 ">DIV 1</div> 
+            <div class="col-3 ">DIV 2</div>     
+    </div>
+    <!-- Note que as colunas não compartilham a mesma linha apesar de terem so 3 colunas, ou seja não ficam uma ao lado da outra, isso porque tiramos o container da classe row, esse recurso é util para você dimensionar divs, ou seja uma div solta da classe col-3 tem 25% do tamanho do seu container, porque 3 colunas é 25% de 12 colunas, importante realçar até aqui que tudo visto até agora da para aplicar em resoluções diferentes, como vimos antes. -->
+</body>
+</html>
+

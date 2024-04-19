@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script> 
+    <!-- Usaremos o script aqui em cima, mas com um atributo defer no final, significa que só vai ser executado o script depois que carregar todos os elementos da página, oque equivale a botar o script no final do documento. -->
+    <style>
+        .row {
+            height: 200px;
+            background-color: aliceblue;
+        }
+        .col-3 {
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black;
+        }
+    </style>
+    <title>Formatação de Colunas</title>
+</head>
+<body>
+    <!--Atalho para criar o código abaixo:                        div.container>div.row>div.col-3{Coluna $}*3 -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+AULA 08
+#Formatação de Colunas 
+
+Vscode primeiro código:
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script> 
+//Usaremos o script aqui em cima, mas com um atributo defer no final, significa que só vai ser executado o script depois que carregar todos os elementos da página, oque equivale a botar o script no final do documento. -->
+    
+
+    <style>
+        .row {
+            height: 200px;
+            background-color: aliceblue;
+        }
+        .col-3 {
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black;
+        }
+    </style>
+    <title>Formatação de Colunas</title>
+</head>
+<body>
+
+    <!--Atalho para criar o código abaixo:      div.container>div.row>div.col-3{Coluna $}*3 -->
+
+    <div class="container"> 
+        <div class="row align-items-center">                            //Posso alinhar no centro todas as colunas da linha ou podemos alinhar individualmente igual fizemos abaixo com o align-self, mas tira esse align-items aqui antes para funcionar.
+            <div class="col-3 align-self-start">Coluna 1</div>          //Aqui vamos alinhar a primeira coluna no topo.
+            <div class="col-3 align-self-center">Coluna 2</div>         //Alinhar no centro
+            <div class="col-3 align-self-end">Coluna 3</div>            //Alinhar no fim
+        </div>
+    </div>
+    
+Gráfico:
+
+| 1 |
+    | 2 |
+        | 3 |
+
+Revisando:
+
+Esse alinhamento so é possivel porque toda div da classe row é tambem um container flexbox.
+Todas essas classes de aninhamento tem suas variantes com seus indicadores de breakpoints.
+Ou seja tambem posso ter um alinhamento diferente em uma coluna mostrada no celular outra no computador.
+O padrão que vem é align-items-scretch, onde não possui nenhum alinhamento.
+Esse é o alinhamento vertical.
+
+
+Agora vamos ao código novamente e usaremos o justify-content-center:
+
+<div class="container"> 
+        <div class="row justify-content-center">               //Posso alinhar no centro todas as colunas horizontalmente.
+            <div class="col-3">Coluna 1</div>          
+            <div class="col-3">Coluna 2</div>         
+            <div class="col-3">Coluna 3</div>            
+        </div>
+    </div>
+
+Gráfico: row justify-content-center
+_________________________
+|  |     |     |     |  |
+|  | 1   | 2   | 3   |  |
+|__|_____|_____|_____|__|       
+
+Gráfico: row justify-content-start
+____________________________
+|      |      |      |     |
+|   1  |   2  |  3   |     |
+|______|_____ |____ _|_____|       
+
+Gráfico: row justify-content-end
+____________________________
+|      |      |      |     |
+|      |  1   |  2   |  3  |
+|______|_____ |____ _|_____|       
+
+Gráfico: row justify-content-between    //Para espaçar entre as colunas
+________ ________ _______
+|      | |      | |      |
+|   1  | |  2   | |  3   |
+|______| |____  | |___ _ |       
+
+tem o row justify-content-around //Para espaçar tambem
+
+E a jutify-evenly //Espaçar igualmente
+
+ORDER:
+
+E tambem podemos ordenar, com numeros ou first e left: 
+Exemplo:
+            <div class="col-3 order-2">Coluna 2</div>
+            <div class="col-3 order-last">Coluna 3</
+
+#DESLOCAR
+
+ <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-3 offset-1">DIV 1</div>  
+            <!-- OFFSET: Aqui tenho o afastamento de uma coluna para a esquerda -->
+            <div class="col-3 offset-2">DIV 2</div>
+            <!-- Aqui o afastamento de duas colunas -->
+            <div class="col-3 offset-1">DIV 3</div>
+        </div>
+    </div>
+    
+
+Note que somando a coluna e os offsets da para saber quando a linha vai quebrar. -->
+
+#MARGEM ESQUERDA AUTOMATICA(MS)
+
+<div class="container">
+        <div class="row ">
+            <div class="col-3 ms-auto">DIV 1</div>
+              <!--Margem esquerda automatica  -->
+           
+            <div class="col-3 ms-auto ">DIV 2</div> 
+
+Adicionando margem esquerda (ms: margin start) automática para separar as divs, ela é totalmente descolada para direita -->
+
+#MARGEM HORIZONTAL (MX)
+
+<div class="container">
+        <div class="row">
+            <div class="col-3 mx-auto">DIV 1</div> 
+
+Vamos usar MX, em vez de ms ou me, veja que a div ficou centralizada, isso acontece porque a margem esquerda e direita foram definidas de forma automática, dividindo a região disponivel do container por dois e aplicando uma parte em cada lado, e centralizando nossa div no meio. O mx significa margem horizontal. o my significa margem vertical.-->
+       
+
+#COLUNAS SOLTAS
+
+<div class="container">
+        
+            <div class="col-3 ">DIV 1</div> 
+            <div class="col-3 ">DIV 2</div>     
+    </div>
+
+Note que as colunas não compartilham a mesma linha apesar de terem so 3 colunas, ou seja não ficam uma ao lado da outra, isso porque tiramos o container da classe row, esse recurso é util para você dimensionar divs, ou seja uma div solta da classe col-3 tem 25% do tamanho do seu container, porque 3 colunas é 25% de 12 colunas, importante realçar até aqui que tudo visto até agora da para aplicar em resoluções diferentes, como vimos antes.
