@@ -1,0 +1,246 @@
+AULA 07
+
+#Sistema de layout em Grid em Bootstrap5:
+ Utiliza flexbox para dvidir um container em doze colunas que podem ser configuradas de maneira responsiva para compor regiões em uma página.
+
+ 
+O sistema de grid divide virtualmente esse container em 12 cokunas, todas de igual larguras.
+
+|1|2|3|4|5|6|7|8|9|10|11|12|
+
+Sendo que podemos criar regiões compostas por agrupamentos dessas colunas.
+Imagina que eu quero criar um layout criando três regiões verticais:
+Sendo que as regiões das extremidades devem ter a metade da largura da região central.
+Entenda então que a região 1 totaliza 3 colunas, a região 2 ocupa 6 colunas, e a região 3 ocupa 3 colunas, totalizando 12 colunas ainda.
+
+|  1  |      2     |   3   |
+
+
+Entenda que aqui temos tres regiões, as colunas são apenas delimitadores virtuais de largura.
+
+Para criar uma div com três regiões como essa precisariamos primeiramente configurar como um container
+
+Dentro da div container vamos ter outra div configurada como container de colunas, que nesse caso chamamos de linha, e dentro dessa div linha vamos ter três div's uma para cada região.
+Essas três divs seriam configuradas para ocupar a quantidade de colunas desejada para cada uma.
+
+Vamos ao VSCODE: 
+
+<style>
+        .h400 {                             //Criamos uma classe
+            height: 400px;
+        } 
+
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="row">
+            <div class="col-3 bg-dark bg-opacity-50 h400">            </div>
+            <div class="col-6 bg-dark bg-opacity-75 h400">            </div>
+            <div class="col-3 bg-dark bg-opacity-50 h400">            </div>
+        </div>
+
+
+Exemplo 2:
+
+
+<div class="container">
+        <div class="row">
+            <div class="col bg-dark bg-opacity-50 h400"></div>
+            <div class="col-6 bg-dark bg-opacity-75 h400"></div>
+            <div class="col bg-dark bg-opacity-50 h400"></div>
+
+Exemplo 3:
+
+
+<div class="container">
+        <div class="row">
+            <div class="col bg-dark bg-opacity-50 h400"></div>     //Vai ocupar duas colunas e meia, largura dinamica
+            <div class="col-3 bg-dark bg-opacity-75 h400"></div>     //largura fixa
+            <div class="col-4 bg-dark bg-opacity-25 h400"></div>     //largura fixa
+            <div class="col bg-dark bg-opacity-50 h400"></div>    //Vai ocupar duas colunas e meia, ocupando largura dinamica
+
+#Legenda:
+
+col vai definir a largura em colunas que a div vai ocupar dentro da linha, lembra que existem 12.
+            
+Se eu uso col-6, e especifico a largura fixa de 6 colunas, as duas regiões que sobram vai automaticamente complementar o tamanho com um calculo (ocupando 3 colunas cada um nesse caso para fechar 12) so de eu digitar col.
+
+h400: Atribui uma altura de 400px ao elemento, sem altura as divs não são exibidas, que inclusive criamos essa classe lá em cima no estilo.
+
+
+Note que existe a largura fixa: col-6, col-3 
+                E largura dinâmica: col
+
+Sempre que as 12 colunas são extrapoladas novas linhas são criada a baixo para comportar o excedente.
+
+Vamos ver agora outro exemplo e possibilidades de uso de colunas: 
+
+Aqui temos um container dividido em 4 regiões:
+ ___________
+|_____1_____|
+|   |       |
+| 2 |   3   |
+|___|_______|
+|_____4_____|
+
+Layout muito comum em páginas web, ele tem cabeçalho, rodapé, região de conteudo dividida em duas partes. Onde a da esquerda geralmente é utilizada para botar o menu ou algo assim, e da direita para o conteúdo em si.
+
+Vamos ver no VsCode como fica para fazer um desse:
+
+<style>
+        .h100 {
+            height: 100px;    //Criamos uma classe que define a altura para 100px          
+        }
+        .h400 {
+            height: 400px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+            <div class="col-3 bg-dark bg-opacity-75 h400"></div>
+            <div class="col-9 bg-dark bg-opacity-25 h400"></div>
+            <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+        </div>
+    </div>
+
+
+Até agora os layouts que vimos não são responsivos, a não ser pelo fato que a largura do container se adequa a largura da  tela.
+Mas esse comportamento  responsivo é do container e não das regiões baseadas no sistema de layout em grid.
+
+Para tornar responsivo temos que classes de configurações de colunas, com os infixos de breakpoint que foram mostrados na aula anterior.
+
+Vamos analisar novamente o mesmo layout:
+
+ ___________
+|_____1_____|
+|   |       |
+| 2 |   3   |
+|___|_______|
+|_____4_____|
+
+
+Em tela pequena provavel que ficaria algo assim no dispositivos moveis: Apertando a região 2 e 3 tornando bem estreitas, não comportaria nada direito.
+
+ ______
+|______|
+| |    |
+| |    |
+|_|____|
+|______|
+
+Uma possivel solução seria transportar a região de menu para ficar acima do conteúdo:
+Assim eu posso aumentar a largura disponivel tanto para o conteudo, como para região de menu.
+
+Oque ficaria mais ou menos assim: Veja que agora nos temos quatro regiões que ocupam 12 colunas cada uma, ou seja toda a faixa horizontal do container.
+Esse é o layout que queremos nos dispositivos moveis, vale a pena mencionar que o bootstrap5 tem a caracteristica de ser mobile first, a proposta inicial sendo a criação de layouts para dispositivos móveis, depois as telas maiores.
+
+Vamos deixar assim toda vez que estiver em tela mobile:
+ ______
+|__1__|
+|  2  |
+|_____|
+|  3  |
+|_____|
+|__4__|
+
+E vamos voltar ao VSCode para ver como obter esse comportamento: 
+
+
+<style>
+        .h100 {
+            height: 100px;    //Criamos uma classe que define a altura para 100px          
+        }
+        .h400 {
+            height: 400px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+            <div class="col-12 col-sm-3 bg-dark bg-opacity-75 h400"></div>
+            <div class="col-12 col-sm-9 bg-dark bg-opacity-25 h400"></div>
+            <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+        </div>
+    </div>
+
+Legenda:
+
+Note que agora possuimos duas classes de configuração de coluna (col e col-sm)
+
+
+Formando exatamente isso em telas grandes: quando igual ou superior a 576px:  
+
+col-sm-3: Quando estamos em uma tela igual ou superior a 576px(sm) visualizaremos a div ocupando 3 colunas.
+col-sm-9: Quando estamos em uma tela igual ou superior a 576pxsm) visualizaremos a div ocupando 9 colunas.
+ ___________
+|_____1_____|
+|   |       |
+| 2 |   3   |
+|___|_______|
+|_____4_____|  
+
+E isso em pequenas (Agora ja responsivo), inferior a 576 pixels a segunda e a terceira div's vai ocupar 12 colunas, oque corresponde a largura de toda a tela:
+Para larguras inferiores (telas pequenas) a classe é sem infixo (sm-xxl...) pois é o nosso padrão.
+ _____
+|__1__|
+|  2  |
+|_____|
+|  3  |
+|_____|
+|__4__|
+
+Vamos fazer o teste de responsivididade no navegador e vamos testar.
+
+E é assim que conseguimos responsividade para nosso site.
+
+E agora veremos uma situação que o uso de multiplas linhas é necessario,
+imagina que voce quer dividir um container 
+em uma linha com cinco colunas iguais e outra com sete colunas iguais,
+ nesse caso não temos como usar divs de largura fixa, e consequentemente temos que usar mais de uma linha, ou seja mais de uma div da classe row, observe o código para chegar ao resultado:
+
+Temos duas divs da class row e dentro da primeira 5 divs da classe col.
+                                     E na segunda 7 divs da classe col.
+
+E a largura sera dividida igualmente entre as 5 regiões e na segunda div a mesma coisa so que com 7 regiões.
+
+Código VSCode:
+
+<style>
+
+        .h100 {
+            height: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+            
+            </div>
+        </div>    
+    </div>
+</body>
+</html>

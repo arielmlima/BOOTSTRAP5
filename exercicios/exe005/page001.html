@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Sistema de Layout em Grid</title>
+    <style>
+        .h400 {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-dark bg-opacity-50 h400"></div>
+            <div class="col-6 bg-dark bg-opacity-75 h400"></div>
+            <div class="col bg-dark bg-opacity-50 h400"></div>
+
+            <!-- col vai definir a largura em colunas que a div vai ocupar dentro da linha, existem 12.
+            
+            Se eu uso col-6, e especifico a largura fixa de 6 colunas, as duas regiões que sobram vai automaticamente complementar o tamanho com um calculo (ocupando 3 colunas cada um nesse caso para fechar 12) so de eu digitar col.
+
+            h400: Atribui uma altura de 400px ao elemento, sem altura as divs não são exibidas-->
+        </div>
+    </div>
+</body>
+</html>
