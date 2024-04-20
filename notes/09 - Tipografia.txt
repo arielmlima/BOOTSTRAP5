@@ -1,0 +1,14 @@
+AULA 09
+
+#TIPOGRAFIA
+
+O bootstrap por padrão ja modifica a tipografia do navegador:
+ Oferece sua propria tipografia baseado em melhores práticas: 
+ Sem serifa sendo melhor para leitura em telas.
+ 16px padrão, e configura a cor dos links de página. 
+
+Vamos ao VSCODE: Notamos que com o bootstrap e sem fica totalmente diferente.
+
+Bootstrap 
+
+Fiz tudo pelo Cods.
