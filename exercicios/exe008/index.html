@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <title>Imagens e Figuras</title>
 </head>
 <body>
+    <div class="container">
+        <img src="rect.svg" alt="Imagem Responsiva" class="img-fluid">
+        <!-- Por estar na class img-fluid ela vai obedecer o tamanho do container, podemos diminuir que a imagem diminui junto do container, e aumentar tambem.-->
+    </div>
+
+    <div class="container">
+        <img src="quad.svg" alt="Imagem Responsiva"
+        class="img-thumbnail">
+        <!-- O img-thumbnail deixa a imagem com bordas levemente arredondadas, da uma leveza interessante, e uma borda bem suave. -->
+    </div>
+
+    <div class="container">
+        <img src="rect.svg" alt="Imagem Responsiva" class="img-fluid img-thumbnail">
+        <!-- Posso usar as duas juntas tambem-->
+    </div>
+
+    <div class="container">
+        <img src="rect.svg" alt="Imagem Responsiva" class="img-fluid rounded">
+        <!-- rounded tambem deixa os cantos arredondados, sem a borda suave.-->
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <img src="quad.svg" alt="Imagem Responsiva" class="img-thumbnail float-start me-3">
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ea ipsa ab ad tempore laborum officiis illo nihil at, neque praesentium, quia enim recusandae nulla nam quidem voluptatibus quis minima. Aut tempore quis obcaecati iste eligendi exercitationem illum optio. Cupiditate, similique? Nulla perferendis doloremque ex nemo accusamus ducimus provident sequi nobis neque vel pariatur tempora expedita dignissimos vero soluta tempore, ipsum quas molestiae quia quisquam vitae beatae quos eum. Provident rem earum vitae expedita consequatur sapiente natus et! Explicabo, dolorem.</p>
+       <!--float-start para a imagem ficar grudada no canto superior esquerdo, e o texto ficar ao lado, ou float-end se eu quiser jogar pro lado direito. 
+        me-3 serve para criar margem(margin ending), de 3unidades, separando um pouco o texto da imagem. o ms-3 serviria se estivesse usando o float end, vulgo margin start.
+         -->
+    </div>
+
+    <div class="container">
+        <img src="quad.svg" alt="Imagem Responsiva" class="rounded float-end ms-3">
+        <p class="lead text-end">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ea ipsa ab ad tempore laborum officiis illo nihil at, neque praesentium, quia enim recusandae nulla nam quidem voluptatibus quis minima. Aut tempore quis obcaecati iste eligendi exercitationem illum optio. Cupiditate, similique? Nulla perferendis doloremque ex nemo accusamus ducimus provident sequi nobis neque vel pariatur tempora expedita dignissimos vero soluta tempore, ipsum quas molestiae quia quisquam vitae beatae quos eum. Provident rem earum vitae expedita consequatur sapiente natus et! Explicabo, dolorem.</p>
+        <!-- E no texto, usamo a class text-end porque a imagem foi para direita. -->
+       
+    </div>
+
+<hr>
+    <div class="container text-center">
+        <img src="quad.svg" alt="Imagem Responsiva" class="rounded">
+        <!-- Se quisermos centralizar nossa imagem ao centro da página essa é uma das formas, vamos estudar mais outros métodos quando estudarmos sobre margens. -->
+    </div>
+
+<hr>
+    <div class="container text-center">
+        <figure class="figure">
+            <img src="quad.svg" alt="Quadrado" class="img-fluid rounded">
+            <figcaption class="figcaption text-center">Legenda da figura</figcaption>
+        </figure>
+        <!-- Sempre que precisar exibir imagens com uma legenda opte pelo elemento figure, a classe bootstrap figure se chama figure, e suporta lidar com a figura.-->
+    </div>
     
 </body>
 </html>

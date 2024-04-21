@@ -1,0 +1,15 @@
+AULA 10
+BOOTSTRAP5 
+
+Imagens e Figuras
+
+O bootstrap possui classes para tornar imagens responsivas de forma que elas nunca fiquem maiores do que os elementos que as contem.
+Alem disso essas classes podem deixar a imagem como o aspecto visual mais leve.  
+
+//ROUNDED
+//IMG-FLUID 
+//IMG-THUMBNAIL 
+
+Sempre que precisar exibir imagens com uma legenda opte pelo elemento figure, a classe bootstrap figure se chama figure, e suporta lidar com a figura.
+ 
+//FIGURE
