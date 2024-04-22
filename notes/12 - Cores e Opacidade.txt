@@ -1,0 +1,14 @@
+AULA 12 BootStrap5
+#Cores e Opacidade
+
+Bootstrap tem 8 cores temáticas, identificadas pelo sufixo, sendo sufixo em várias situações, para textos, planos de fundo, outlines, e outras coisas : 
+    //PRIMARY(TOM AZUL) 
+    //SECONDARY (TOM DE CINZA) 
+    // WARNING (TOM AMARELADO) 
+    // DANGER (TOM VERMELHO) 
+    // INFO (AZUL CLARO) 
+    // DARK (TABELA PRETA FONTE BRANCA) 
+    // LIGHT (TABELA BRANCA FONTE PRETA)
+    // SUCESS (VERDE)
+    // TRANSPARENT (TRANSPARENT)
+
