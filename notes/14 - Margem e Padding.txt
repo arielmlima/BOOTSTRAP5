@@ -1,0 +1,34 @@
+No CSS, Margens externas são aquelas configuradas atraves da propriedade margin.
+   E as margens internas são aquelas configuradas pela propriedade padding e suas variantes.
+
+   //M-0 A M-5   MARGIN
+   //P-0 A P-5   PADDING
+
+   E podemos definir se queremos no inicio no fim, em cima em baixo:
+   Exemplo usando margem:
+
+   //ms-4     MARGIN START (ESQUERDA)
+   //me-2     MARGIN END (DIREITA)
+   //mt-3     MARGIN TOP
+   //mb-3     MARGIN BOTTOM 
+
+   Para padding(Margem interna): Mesma ideia:
+
+   ps, pe, pt, pb. 
+
+   Agora vamos a dois outros modificadores, supondo que eu quero aplicar uma margem somente as laterais do elemento, vamos usar um padding esquerdo direito de cinco unidades:
+
+   Exemplo:  px-5
+             
+   O x é o eixo horizontal <- ->
+   E o y é o vertical ∧∨
+
+   Exemplo: py-5
+
+   Adicionamos responsividade a margem 0 quando a tela for maior.
+   Exemplo:   m-xxl-0 
+
+   Seja interna ou externa voce pode atribuir responsividade.
+
+   Para centralizar: 
+   mx-auto

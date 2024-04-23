@@ -1,0 +1,24 @@
+Bordas e sombras não tem variantes de responsividade, ou seja usando somente bootstrap 5 não consigo colocar configurações de bordas diferentes para diferentes resoluções de telas.
+
+    Bordas:
+
+    //border      para por uma borda
+    //border-dark       cor da borda
+    //border-3    espessura da borda
+    //border-opacity-50    opacidade
+    //rounded-2   arredondar a borda
+    
+    Posso usar start, bottom, end top aqui tambem.
+
+    E para sombras:
+    shadow-none   remover sombra
+    shadow-sm     sombra pequena
+    shadow        sombra media
+    shadow-lg     sombra grande
+
+   Dicas:
+   rounded-pill   forma uma pilula
+   rounded-circle  forma um circulo
+
+Observação:
+   Tudo isso que aplicamos não é so na em uma div que podemos aplicar, é em qualquer classe.

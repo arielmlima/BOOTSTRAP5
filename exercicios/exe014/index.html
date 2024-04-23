@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Configuração de Textos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text-start text-sm-end">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, mollitia.</div>
+<hr>
+        <div class="container fs-3">
+            <p class="fw-bold">Texto em Negrito</p>
+            <p class="fw-semibold">Texto com peso Semi-Negrito</p>
+            <p class="fw-normal">Texto com peso Normal</p>
+            <p class="fw-light">Texto com peso leve</p>
+            <p class="fst-italic">Texto com estilo itálico</p>
+            <p class="fst-normal">Texto com estilo normal</p>
+        </div>
+<hr>
+        <div class="container fs-3">
+            <p class="lh-lg font-monospace text-decoration-line-through font-monospace text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo exercitationem cumque, accusamus ipsam sint itaque repudiandae placeat commodi est, quo quia. Illo molestiae aperiam quod accusamus corrupti! Ab placeat expedita illo temporibus laudantium voluptatem explicabo aperiam quas doloribus repudiandae, rem est neque delectus dolor architecto earum et dolorem dolores!
+                <a href="#" class="text-reset">Link Qualquer</a> 
+                <!-- Note que la em cima adicionamos text-muted e o link continuou da mesma forma, quando adicionamos text-reset o link ficou da mesma cor do elemento pai, e pega os atributos do elemento pai. -->
+            </p>
+        </div>
+      
+
+    </div>
+    
+       
+    
+</body>
+</html>
+<!-- 
+    Alinhando texto:
+
+    text-start
+    text-center
+    text-end
+    
+    E elas possuem variantes responsivas:
+    Ex: text-sm-end
+
+    Outras classes legais:
+
+    //text-nowrap  deixa tudo em uma linha, criando uma rolagem horizontal. 
+
+    //text-break para quebrar, caso não tenha quebras.
+
+    //text-lowercase tudo minusculo
+
+    //text-uppercase tudo maiusculo
+
+    //text-capitalize todas iniciais maiusculas
+
+    As classes para variar o tamanho da fonte é fs (fontsize) e vai do tamanho de 1 a 6, corresponde os tamanhos de h1 a h6.
+
+    Vimos tambem o FW (fontweight) para configurar o peso:
+    
+    fw-bold
+    fw-semibold
+    fw-normal
+    fw-light
+    
+    Estilo de fonte:
+
+    fst-italic 
+    fst-normal
+
+    E para configurar a altura da linha de texto, espaçamento vertical entre uma e outra: lh(lineheight): Temos 4 possibilidades:
+
+    lh-1
+    lh-sm
+    lh-base
+    lh-lg
+
+    Classe para configurar fonte mono-espaçada:
+
+    font-monospace
+ 
+    No link:
+
+    //text-reset que usamos no link, pegou a cor do elemento pai.
+
+   //text-decoration-none    para tirar o sublinhado.
+
+   //text-decoration-underline   texto sublinhado
+
+  //text-decoration-line-through   texto riscado
+
+   //text-truncate  deixa o código com uma linha, e adiciona tres pontinhos ao final. Com o JS da para fazer igual fazem nas lojas virtuais, clica em cima, o texto inteiro aparece. 
+ -->

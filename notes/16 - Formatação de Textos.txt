@@ -1,0 +1,58 @@
+
+Alinhando texto:
+
+    text-start
+    text-center
+    text-end
+    
+    E elas possuem variantes responsivas:
+    Ex: text-sm-end
+
+    Outras classes legais:
+
+    //text-nowrap  deixa tudo em uma linha, criando uma rolagem horizontal. 
+
+    //text-break para quebrar, caso não tenha quebras.
+
+    //text-lowercase tudo minusculo
+
+    //text-uppercase tudo maiusculo
+
+    //text-capitalize todas iniciais maiusculas
+
+    As classes para variar o tamanho da fonte é fs (fontsize) e vai do tamanho de 1 a 6, corresponde os tamanhos de h1 a h6.
+
+    Vimos tambem o FW (fontweight) para configurar o peso:
+    
+    fw-bold
+    fw-semibold
+    fw-normal
+    fw-light
+    
+    Estilo de fonte:
+
+    fst-italic 
+    fst-normal
+
+    E para configurar a altura da linha de texto, espaçamento vertical entre uma e outra: lh(lineheight): Temos 4 possibilidades:
+
+    lh-1
+    lh-sm
+    lh-base
+    lh-lg
+
+    Classe para configurar fonte mono-espaçada:
+
+    font-monospace
+ 
+    No link:
+
+    //text-reset que usamos no link, pegou a cor do elemento pai. Note que la em cima adicionamos text-muted e o link continuou da mesma forma, quando adicionamos text-reset o link ficou da mesma cor do elemento pai, e pega os atributos do elemento pai.
+
+   //text-decoration-none    para tirar o sublinhado.
+
+   //text-decoration-underline   texto sublinhado
+
+  //text-decoration-line-through   texto riscado
+
+   //text-truncate  deixa o código com uma linha, e adiciona tres pontinhos ao final. Com o JS da para fazer igual fazem nas lojas virtuais, clica em cima, o texto inteiro aparece. 
