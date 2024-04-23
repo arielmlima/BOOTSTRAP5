@@ -1,0 +1,14 @@
+AULA 13 BOOTSTRAP
+
+Coleção de icones vetoriais, mais de 1600 icones.
+
+    icons.getbootstrap.com
+
+    Acessa o site acima, e usaremos o método/instalação por CDN copiando o link na aba install.
+
+    Escolhe o icone e digita na classe o nome que tem la.
+
+    Podemos aumentar o tamanho com p-numero (padding) ou criar um estilo dentro e usando fontsize aumentamos.
+
+    Para alterar a cor do icone usa as cores que aprendemos, ou via estilo mesmo com o color: Ex:
+    text-primary.
