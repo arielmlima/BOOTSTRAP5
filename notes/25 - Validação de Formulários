@@ -1,0 +1,46 @@
+ No formulário vamos definir GET ou POST:
+GET: ENVIO DE DADOS VIA URL
+POST: ENVIO PELO CORPO DA REQUISIÇÃO  
+
+ Adicionamos a classe bootstrap needs-validation ao formulário, para o bootstrap validar.
+
+E o novalidate é para desabilitar a configuração padrão de validação do navegador.
+
+
+Vamos ao site do bootstrap pegar o link script de validação que vamos adicionar a nossa página:
+
+No site: DOCS>FORMS>VALIDATION
+
+Vamos criar um script antes do fechamento do body e adicionar isso: VAI CAPTURAR TODOS OS FORMULÁRIOS DA PÁGINA, QUE SÃO DA CLASSE needs-validation e para cada formulário encontrado um manipulador de evento vai ser adicionado ao comando submit que é quando o formulário é submetido, e esse validador de evento vai checar o formulário vendo se algum campo é invalido, se for não vai deixar o formulário ser submetido e vai adicionar a classe was-validated ao formulário, isso é javascript. Basta adicionar ao fim da página que vai ser possivel fazer a validação.
+
+(() => {
+  'use strict'
+
+ Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+ 
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+Note que ao clicar em cadastrar, com os campos vazios, agora acontece algo, ele mostra oque falta preencher, e oque ta okay com icones, uns com problemas de validação outros não, no caso o formulário não foi submetido pois houve erros, o comportamento padrão dele de enviar pro servidor é interrompido.
+
+
+invalid-feedback: Exibir mensagem em vermelho abaixo da caixa, quando houver erro em alguma validação.
+
+valid-feedback:Exibir mensagem quando validar certinho.
+
+
+Note que esse tipo de validação é so feita no navegador, e um usuario mais avançado burla facilmente isso, e por conta disso é muito comum  criar validação no servidor, ou seja, o programa que roda no servidor vai receber os dados desse formulário vai validar cada um dos cantos, e devolver algum tipo de feedback relacionado a validação do formulário. quando for esse o caso, o servidor ja manda um feedback mostrando os campos invalidos e cabe a você determinar quais campos vão receber as classes que vao corresponder a campos validos e invalidos.
+
+Podemos usar a class is-valid
+e is-invalid em cada um para definir um por um tambem.

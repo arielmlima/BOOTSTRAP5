@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Validação de Formulários</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row mb-3 g-4">
+            
+
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Campo 1">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Campo 2">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Campo 3">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Campo 4">
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row mb-3">
+            <label for="" class="col-form-label col-1">E-mail</label>
+            
+            <div class="col-11"><input type="email" name="" id="" class="form-control"></div>
+            
+        </div>
+
+        <form method="post" class="needs-validation" novalidate>
+            <div class="row mb-3 g-3">
+                <div class="col-7">
+                    <label for="logradouro" class="form-label">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" required>
+                    <div class="invalid-feedback">Você deve informar o logradouro.</div>
+                    <div class="valid-feedback">Logradouro informado corretamente.</div>
+                </div>
+                <!-- required torna o campo obrigatório -->
+
+                <div class="col-2">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+
+                <div class="col-3">
+                    <label for="complemento" class="form-label">Complemento</label>
+                    <input type="text" class="form-control" id="complemento">
+                </div>
+
+                <div class="col-6">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro">
+                </div>
+
+                <div class="col-6">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+
+                <div class="col-8">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control is-valid" id="estado">
+                </div>
+
+                <div class="col-4">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" pattern="[0-9]{8}" placeholder="***** ***" required >
+                    <!-- Tem que ter o formato de 8 digitos de 0 a 9 -->
+                    <div class="invalid-feedback">Você deve informar o CEP.</div>
+                </div>
+
+                <div class="col-12">
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Concordo com os temos e condições</label>
+                    
+                </div>
+
+                <button class="btn btn-primary col-2 btn-sm">Cadastrar</button>
+
+
+        </form>
+    </div>
+
+    <script>
+        (() => {
+  'use strict'
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+</body>
+
+</html>
+
+<!-- No formulário vamos definir GET ou POST:
+GET: ENVIO DE DADOS VIA URL
+POST: ENVIO PELO CORPO DA REQUISIÇÃO  
+
+ Adicionamos a classe bootstrap needs-validation ao formulário, para o bootstrap validar.
+
+E o novalidate é para desabilitar a configuração padrão de validação do navegador.
+
+
+Vamos ao site do bootstrap pegar o link script de validação que vamos adicionar a nossa página:
+
+No site: DOCS>FORMS>VALIDATION
+
+Vamos criar um script antes do fechamento do body e adicionar isso: VAI CAPTURAR TODOS OS FORMULÁRIOS DA PÁGINA, QUE SÃO DA CLASSE needs-validation e para cada formulário encontrado um manipulador de evento vai ser adicionado ao comando submit que é quando o formulário é submetido, e esse validador de evento vai checar o formulário vendo se algum campo é invalido, se for não vai deixar o formulário ser submetido e vai adicionar a classe was-validated ao formulário, isso é javascript. Basta adicionar ao fim da página que vai ser possivel fazer a validação.
+
+(() => {
+  'use strict'
+
+ Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+ 
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+Note que ao clicar em cadastrar, com os campos vazios, agora acontece algo, ele mostra oque falta preencher, e oque ta okay com icones, uns com problemas de validação outros não, no caso o formulário não foi submetido pois houve erros, o comportamento padrão dele de enviar pro servidor é interrompido.
+
+
+invalid-feedback: Exibir mensagem em vermelho abaixo da caixa, quando houver erro em alguma validação.
+
+valid-feedback:Exibir mensagem quando validar certinho.
+
+
+Note que esse tipo de validação é so feita no navegador, e um usuario mais avançado burla facilmente isso, e por conta disso é muito comum  criar validação no servidor, ou seja, o programa que roda no servidor vai receber os dados desse formulário vai validar cada um dos cantos, e devolver algum tipo de feedback relacionado a validação do formulário. quando for esse o caso, o servidor ja manda um feedback mostrando os campos invalidos e cabe a você determinar quais campos vão receber as classes que vao corresponder a campos validos e invalidos.
+
+Podemos usar a class is-valid
+e is-invalid em cada um para definir um por um tambem.-->
