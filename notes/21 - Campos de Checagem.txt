@@ -1,0 +1,12 @@
+CHECKBOX
+for e id com o mesmo nome, para haver mais relação.
+Temos que determinar um id e entregar para o label, para funcionar a ligação. -->
+Por padrão vai ser feito em coluna se estão dentro da classe form-check, para fazer em linha põe o atributo form-check-inline.
+
+Para alinhar a direita, usa o form-check-reverse
+
+O name usamos para fazer uma relação entre campos tambem.
+
+Nessa aula de Bootstrap, você vai aprender como configurar campos de checagem padrão em formulários (checkbox e rádio). Começa com a criação do elemento container do checkbox e adiciona as classes Bootstrap form-check e form-check-label.
+
+Para o rádio, as configurações são parecidas. Esses campos são mutuamente exclusivos. Também mostra como criar botões marcáveis e como trocar a classe outline por solid para diferenciar os campos marcados e não marcados.

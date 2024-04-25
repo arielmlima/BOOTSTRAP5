@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Campos de Checagem</title>
+</head>
+
+<body>
+    <!-- CHECKBOX -->
+    <div class="container p-5">
+        <div class="mb-3 form-check"><input type="checkbox" class="form-check-input" id="novo"><label for="novo"
+                class="form-check-label">Produto Novo</label></input></div>
+        <!-- for e id com o mesmo nome, para haver mais relação. -->
+        <hr>
+
+
+
+        <!-- RADIO -->
+        <div class="mb-3 form-check form-check-inline"><input type="radio" class="form-check-input" id="novo"
+                name="estado" value="n">
+            <label for="novo" class="form-check-label">Produto Novo</label></input>
+        </div>
+
+        <div class="mb-3 form-check form-check-inline"><input type="radio" class="form-check-input" id="novo"
+                name="estado" value="u">
+            <label for="novo" class="form-check-label">Produto Usado</label></input>
+        </div>
+
+
+        <hr>
+
+        <div class="mb-3 form-check form-check-reverse"><input type="radio" class="form-check-input" id="novo"
+            name="estado" value="n">
+        <label for="novo" class="form-check-label">Produto Novo</label></input>
+    </div>
+
+    <div class="mb-3 form-check form-check-reverse"><input type="radio" class="form-check-input" id="novo"
+            name="estado" value="u">
+        <label for="novo" class="form-check-label">Produto Usado</label></input>
+    </div>
+
+        <hr>
+
+        <!-- MARCAR E DESMARCAR MODO INTERRUPTOR -->
+        <div class="mb-3 form-switch">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto Novo</label>
+            </input>
+        </div>
+
+        <hr>
+
+        <!-- Marca e Desmarca formato botão -->
+        <div class="mb-3">
+            <input type="radio" name="tipoEntrega" class="btn-check" id="entregarapida">
+            <label for="entregarapida" class="btn btn-outline-primary">Entrega Rápida</label>
+            </input>
+        </div>
+        <!-- Temos que determinar um id e entregar para o label, para funcionar a ligação. -->
+        <div class="mb-3">
+            <input type="radio" name="tipoEntrega" class="btn-check" id="entregalenta">
+            <label for="entregalenta" class="btn btn-outline-primary">Entrega Lenta</label>
+            </input>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+<!-- Por padrão vai ser feito em coluna se estão dentro da classe form-check, para fazer em linha põe o atributo form-check-inline.
+
+Para alinhar a direita, usa o form-check-reverse
+
+O name usamos para fazer uma relação entre campos tambem.-->
