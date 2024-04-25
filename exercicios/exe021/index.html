@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Complementos de Campos</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="mb-3 input-group">
+            <label for="nome" class="input-group-text">Nome Completo
+            </label>
+            <input type="text" class="form-control" id="nome">
+        </div>
+
+        <div class="mb-3 input-group">
+
+            <input type="password" class="form-control" id="senha">
+            <label for="senha" class="input-group-text">Password
+            </label>
+        </div>
+
+        <div class="mb-3 input-group">
+            <label for="valor" class="input-group-text">R$
+            </label>
+            <input type="number" class="form-control text-end" id="valor">
+            <label for="valor" class="input-group-text">,00
+            </label>
+        </div>
+
+        <div class="mb-3 input-group">
+            <input type="text" class="form-control text-end" id="email">
+            <span for="email" class="input-group-text">@
+            </span>
+            <input type="text" class="form-control" id="email">
+        </div>
+
+        <div class="mb-3 input-group input-group-sm">
+
+            <label for="texto" class="input-group-text">Mensagem
+            </label>
+            <textarea name="" id="texto" class="form-control"></textarea>
+
+        </div>
+
+        <div class="mb-3 input-group">
+            <div class="input-group-text">
+                <input type="checkbox" class="form-check-input mt-0 mx-2">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="mb-3 input-group">
+            <span for="" class="input-group-text">Nome Completo</span>
+
+            <input type="text" class="form-control"  placeholder="Primeiro Nome">
+
+            <input type="text" class="form-control" placeholder="Sobrenome">
+
+        </div>
+
+        <div class="mb-3 input-group">
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">BRL</span>
+            <input  type="text" class="form-control text-end" placeholder="Valor">
+        </div>
+
+        <div class="mb-3 input-group"><input type="search" class="form-control" placeholder="Faça uma busca por aqui"><button class="btn btn-outline-secondary">Buscar</button></div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Como imbutir o Nome Completo la em cima dentro do campo:
+
+    //input-group ELEMENTOS DA DIV AGRUPADOS EM UM UNICO CAMPO 
+    //input-group-text COLOCANDO UM TEXTO COMO COMPLEMENTO DO CAMPO
+    //form-control   CLASSE PADRÃO ELEMENTOS INPUT BOOTSTRAP
+
+
+    //text-end para deixar o texto colado do lado direito. 
+
+
+    Note que para deixar a caixa do lado direito é so botar o label depois do input.
+
+    E tambem da para adicionar dos dois lados, deixa o input entre dois labels.
+
+    No curso de Bootstrap, aprendemos a adicionar complementos em campos de formulários. É possível adornar campos de texto, botões e outros inputs, utilizando classes do Bootstrap.
+
+Podemos agrupar elementos em um único campo, adicionar complementos textuais, como @ e cifrão, e criar agrupamentos entre campos. Também é possível adicionar campos de checagem e labels embaixo dos inputs.
+
+Além disso, aprendemos a personalizar botões para ações específicas, como busca. Com as possibilidades de complementos em campos de formulários, as opções são infinitas.
+
+
+-->

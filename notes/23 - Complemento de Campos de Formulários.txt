@@ -1,0 +1,21 @@
+No curso de Bootstrap, aprendemos a adicionar complementos em campos de formulários. É possível adornar campos de texto, botões e outros inputs, utilizando classes do Bootstrap.
+
+Podemos agrupar elementos em um único campo, adicionar complementos textuais, como @ e cifrão, e criar agrupamentos entre campos. Também é possível adicionar campos de checagem e labels embaixo dos inputs.
+
+Além disso, aprendemos a personalizar botões para ações específicas, como busca. Com as possibilidades de complementos em campos de formulários, as opções são infinitas.
+
+ Como imbutir o "Nome Completo" la em cima dentro do campo:
+
+    //input-group ELEMENTOS DA DIV AGRUPADOS EM UM UNICO CAMPO 
+    //input-group-text COLOCANDO UM TEXTO COMO COMPLEMENTO DO CAMPO
+    //form-control   CLASSE PADRÃO ELEMENTOS INPUT BOOTSTRAP
+
+
+    //text-end para deixar o texto colado do lado direito. 
+
+
+    Note que para deixar a caixa do lado direito é so botar o label depois do input.
+
+    E tambem da para adicionar dos dois lados, deixa o input entre dois labels.
+
+    No curso de Bootstrap, aprendemos a adicionar complementos em campos de formulários. É possível adornar campos de texto, botões e outros inputs, utilizando classes do Bootstrap.
