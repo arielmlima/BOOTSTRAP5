@@ -1,0 +1,9 @@
+
+ Aprenda como configurar campos de formulários com títulos flutuantes no Bootstrap. É possível adicionar esses títulos em campos como e-mail, senha e select. Basta adicionar a classe "form-floating" no elemento HTML e o título ficará flutuante sobre o campo ao ser digitado.
+
+    Com o campo flutuante o titulo sobe, quando digitamos algo dentro.
+
+É importante adicionar o atributo "placeholder" com um espaço vazio para que o título flutue mesmo quando há valor no campo. Há limitações na quantidade de elementos select que podem ter títulos flutuantes visíveis.
+
+
+Limitação em titulos flutuantes em campos ao tipo selected e o size, não funciona bem.

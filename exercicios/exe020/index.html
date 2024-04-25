@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Campos com título flutuante</title>
 </head>
+
 <body>
-    
+    <div class="container p-5">
+        <div class="form-floating mb-3">
+
+
+            <input type="email" name="" id="email" class="form-control" placeholder="">
+            <label for="email" class="form-label">Email</label>
+        </div>    
+
+        <div class="form-floating">
+            <input type="password" name="" id="senha" class="form-control" placeholder="">
+            <label for="senha" class="form-label">Senha</label>
+        </div> 
+
+        <hr>
+
+        <div class="form-floating">
+            <textarea name="" id="msg" class="form-control" style="height: 100px" placegolder=""></textarea>
+            <label for="msg">Mensagem</label>
+        </div>
+<hr>
+        <div class="form-floating">
+            <select name="" id="cidade" class="form-select" placegolder="">
+                <option value="">Cidade 1</option>
+                <option value="">Cidade 2</option>
+                <option value="">Cidade 3</option>
+                <option value="">Cidade 4</option>
+                <option value="">Cidade 5</option>
+            </select><label for="cidade">Cidade</label></div>
+            <!-- Limitação em titulos flutuantes em campos ao tipo selected e o size, não funciona bem -->
+
+
+    </div>
 </body>
+
 </html>
+<!-- 
+    Aprenda como configurar campos de formulários com títulos flutuantes no Bootstrap. É possível adicionar esses títulos em campos como e-mail, senha e select. Basta adicionar a classe "form-floating" no elemento HTML e o título ficará flutuante sobre o campo ao ser digitado.
+
+    Com o campo flutuante o titulo sobe, quando digitamos algo dentro.
+
+É importante adicionar o atributo "placeholder" com um espaço vazio para que o título flutue mesmo quando há valor no campo. Há limitações na quantidade de elementos select que podem ter títulos flutuantes visíveis.
+ -->
