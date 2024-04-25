@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Posicionamento</title>
+</head>
+
+<body>
+    <!-- div.container.my-3.vstack>div.p-5.bg-primary*3 -->
+ <div class="container my-3 vstack gap-3">
+    <div class="p-5 bg-primary"></div>
+    <div class="p-5 bg-success"></div>
+    <div class="p-5 bg-warning"></div>
+ </div>
+
+<hr>
+
+<div class="container my-3 hstack gap-3">
+    <div class="p-5 bg-primary"></div>
+    <div class="vr ms-auto"></div>
+    <div class="p-5 bg-success"></div>
+    <div class="p-5 bg-warning"></div>
+ </div>
+
+ <hr>
+
+ <div class="container my-3 vstack gap-3">
+    <div class="p-5 bg-primary"></div>
+    <div class="p-5 bg-success position-absolute bottom-0 start-0 end-0"></div>
+    <!-- Ocupa a faixa horizontal inteira no rodapé da página, pois usamos o bottom, que vai do inicio da página esquerda da página até o fim do lado direito, poderiamos por so start-50 para ficar centralizado tambem. -->
+    <div class="p-5 bg-warning"></div>
+ </div>
+
+ <!-- Um elemento com posicionamento absoluto tem como referencia o primeiro elemento de hierarquia mais alta que tenha posicionamento relativo ou absoluto, no caso se botarmos um position-relative na div pai, ele vai fazer isso na parte inferior da div container, com as margens do div container.  -->
+
+</body>
+
+</html>
+
+<!--O conteudo dessa classe, torna os itens uma pilha vertical adicionamos a classe: vstack
+
+E usando o gap podemos mecher no espaçamento entre os itens dessa pilha, com algum valor entre 0 e 5.
+
+Possui tambem variantes responsivas.
+
+E fora o vstack temo o hstack, que seria nosso empilhamento horizontal, transformando nossa div em um container flexbox, e as divs internas passam a ser itens flexbox. Mais semelhante ao inline-block, permitindo que tenha elementos nas suas laterais.
+
+vr: separador vertical
+hr> separador horizontal
+
+ms-auto: nesse caso botamos uma margem esquerda automatica no elemento de barra vertical, pegando todo o espaço disponivel na linha jogando os demais elementos para direita.
+->

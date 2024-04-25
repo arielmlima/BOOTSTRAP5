@@ -1,0 +1,42 @@
+ Note que fixamos a div azul no topo e a preta na parte inferior, e o texto ficou atrás da div azul. 
+    
+    O posicionamento fixo tem essa caracteristica, o plano de renderização deixa de fazer parte do plano padrão, como se estivessem flutuando na página portanto todos os outros elementos que seguem o fluxo normal de renderização vão acabar ficando atrás dessas divs.
+
+    Mas temos como resolver isso.
+
+    Vamos criar uma div acima do texto, com o mesmo tamanho p-5 e nesse caso vai ser invisible, ocultando a div mas mantendo espaço dela, e jogando o texto para baixo.
+
+
+   Note que aumentamos o texto, e agora a div debaixo que esta ocultando o fim do nosso texto, vamos seguir a mesma lógica antes, vamos copiar aquela div la do topo para depois do texto.
+
+
+  Lembre-se sempre que colocar elementos fixos no topo e no roda-pé, use divs invisiveis do mesmo tamanho. -->
+
+</body>
+
+</html>
+
+    Se eu quiser fixar uma div no topo:
+
+    fixed-top
+
+    Se eu quiser fixar a div na parte inferior:
+    
+    fixed-bottom
+
+Note que nada fixo tudo funciona normal, e para colar uma div amarela no topo usamos sticky-top: quando a barra de rolagem passar por isso, vai grudar no topo, ficando fixo. E quando voltar e encontrar o local dela ela fixa no local que ela tava. e o sticky-bottom ao contrario. Ou podemos usar os dois ao mesmo tempo.
+
+Ocupa a faixa horizontal inteira no rodapé da página, pois usamos o bottom, que vai do inicio da página esquerda da página até o fim do lado direito, poderiamos por so start-50 para ficar centralizado tambem.
+Um elemento com posicionamento absoluto tem como referencia o primeiro elemento de hierarquia mais alta que tenha posicionamento relativo ou absoluto, no caso se botarmos um position-relative na div pai, ele vai fazer isso na parte inferior da div container, com as margens do div container.
+O conteudo dessa classe, torna os itens uma pilha vertical adicionamos a classe: vstack
+
+E usando o gap podemos mecher no espaçamento entre os itens dessa pilha, com algum valor entre 0 e 5.
+
+Possui tambem variantes responsivas.
+
+E fora o vstack temo o hstack, que seria nosso empilhamento horizontal, transformando nossa div em um container flexbox, e as divs internas passam a ser itens flexbox. Mais semelhante ao inline-block, permitindo que tenha elementos nas suas laterais.
+
+vr: separador vertical
+hr> separador horizontal
+
+ms-auto: nesse caso botamos uma margem esquerda automatica no elemento de barra vertical, pegando todo o espaço disponivel na linha jogando os demais elementos para direita.

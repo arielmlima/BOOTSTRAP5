@@ -1,0 +1,18 @@
+-ESTILIZANDO FORMULÁRIOS 
+    CLASSE PARA TITULO DO CAMPO: form-label
+    CLASSE PARA O CAMPO EM SI: form-control 
+    CLASSE PARA TEXTO: form-text
+    CLASSE PARA INPUT CHECKBOX: form-check-input
+    CLASSE PARA TITULO DO CHECKBOX: form-check-label  
+
+    DEIXAR O CAMPO MAIOR OU MENOR:
+    form-control-lg    //maior que o padrao
+    form-control-sm    //menor que o padrao
+    form-control-plaintext //exibir com a aparencia de não editavel mais depois do primeiro cadastro
+
+
+
+Dicas:
+
+Se quiser desabilitar um campo digita disabled
+Para poder apenas selecionar o texto que esta dentro do campo usa readonly, e para adicionar algo ao campo vamos usar um value='email@email.com', e tambem o placeholder que foi oque deixamos.

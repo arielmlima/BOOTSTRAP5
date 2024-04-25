@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Campos Select, Range e Botões</title>
+</head>
+<body>
+    <div class="container p-5">
+        <div class="mb-3">
+            <label for="" class="form-label">Opção Desejada</label>
+    
+            <div class="col-4 form-select-lg">
+                <select class="form-select" multiple size="6">
+                    <option value="Opção 1"></option>
+                    <option value="Opção 2"></option>
+                    <option value="Opção 3"></option>
+                    <option value="Opção 4"></option>
+                    <option value="Opção 5"></option>
+                    <option value="Opção 6"></option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <label for="faixa" class="form-label"></label>Etapa</label>
+            <input type="range" class="form-range" id="faixa" min="1" max="10" step="1" value="5">
+        </div>
+        <hr>
+        <a href="#" class="btn btn-primary btn-sm">Link</a>
+        <a href="#" class="btn btn-primary">Link</a>
+        <a href="#" class="btn btn-outline-success btn-lg">Link</a>
+        <hr>
+        <button class="btn btn-warning" disable>Botão</button>
+        <hr>
+        <button class="btn btn-primary" data-bs-toggle="button">Botão Marcavel</button>
+    </div>
+    
+    <!-- Usamos o form-select para formatar campos de seleção
+    
+    O mesmo atributo que serve para links serve para butões.
+
+    Aprendemos tipo select e tipo range hoje.
+    
+    -->
+</body>
+</html>

@@ -1,19 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <style>
+        div.border{
+            height: 150px;
+        }
+    </style>
     <title>Visibilidade</title>
 </head>
+
 <body>
     <div class="p-5 bg-danger"></div>
-    <div class="p-4 col-3 d-block m-3 bg-primary"></div>
-    <div class="p-4 col-3 d-block m-3 bg-sucess"></div>
+    <div class="p-4 col-3 d-none d-lg-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-block d-lg-none m-3 bg-success"></div>
     <div class="p-4 col-3 d-block m-3 bg-warning"></div>
+    <!-- Atalho: div.p-4.col-3.d-block.m-3.bg-primary*3
     
-       
+    Como ler: Tem 4 de padding para exibir o conteudo da div, dando volume, ja que ela vem sem conteudo.
+
+    Ela tem uma largura de 3 colunas.
+
+    Display do tipo block, ou seja um elemento de bloco, não permitindo elementos ao seus lados. (tipo block é o padrão de todas as divs)
+
+    Margem de 3 em todos os lados.
+
+    Cor de fundo definimos diferente para cada um.
+
+    Adicionamos responsividade, a primeira div aparece so em telas grandes. E a segunda some em telas grandes.
+-->
+
+    <hr>
+
+    <header class="p-3 text-bg-dark d-print-none">
+        <div class="container">
+            <h1 class="display-1">Cabeçalho</h1>
+        </div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4">Titulo do Artigo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eos fuga commodi, eum, repellat nemo voluptas sint atque dolorum officiis ducimus deleniti aliquam unde velit iste laudantium a, adipisci aut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem debitis necessitatibus possimus vitae saepe inventore, iste earum hic vero eos. Pariatur incidunt magnam vel delectus provident dolor fugiat at accusantium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nihil quaerat, placeat facere vel enim fuga, accusantium sapiente quas quisquam accusamus. Ratione vel aliquid aspernatur, quisquam veniam est voluptas sed.</p>
+        <p class="d-none d-print-block">Fonte: meusite.com.br</p>
+    </article>
+    <hr>
+
     
+    <div class="container">
+        <div class="p-4 m-2 bg-success d-block"></div>
+        <div class="p-4 m-2 bg-primary invisible"></div>
+        <div class="p-4 m-2 bg-danger d-block"></div>
+    </div>
+
+    <hr>
+
+    <!-- Fazendo caber o texto no container -->
+    <div class="container bg-info mt-3">
+         <div class="row">
+            <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore obcaecati officia voluptatem sapiente illum earum, ipsam deserunt deleniti voluptatum minus non asperiores ratione aut itaque consequatur repudiandae quo voluptatibus voluptas!</div>
+            <div class="border p-2 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, consequuntur? Laboriosam rem nisi modi consequatur sapiente distinctio cumque eum dicta voluptas commodi! Omnis, ut repudiandae optio vero quisquam quos numquam.</div>
+            <div class="border p-2 col-3 overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptas veritatis tenetur similique! Laudantium asperiores dolorum commodi doloremque dolor? Sunt quas maxime perspiciatis illum modi aperiam error voluptatem magni. At?</div>
+            <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quaerat pariatur ipsam incidunt maxime distinctio rem saepe animi aspernatur! Obcaecati, voluptatum! Dolore labore voluptatem consectetur saepe, maxime nihil dolores tempore.</div>
+
+<!-- 
+overflow-auto            rolagem vertical (A barra de rolagem so é colocada se necessario, mesmo com o atributo).
+overflow-hidden          esconde o texto que passa
+overflow-visible         padrão
+overflow-scroll          rolagem vertical horizontal (Sempre visiveis)
+                
+             -->
+         </div>
+    </div>
+
 </body>
+
 </html>
+<!--
+    Nessa aula de Bootstrap, explica como configurar a visibilidade de elementos diferentes.
+
+É possível configurar a largura das colunas, margens e exibição de elementos em diferentes resoluções usando as classes disponíveis no framework.
+
+Também foi abordado como controlar a exibição de elementos em situações como impressão de páginas e transbordamento de conteúdo.
+
+Vamos trocar a classe de block das tres pela inline-block. 
+
+block: Não permite nada aos lados.
+inline-block: em linha.
+none: não exibir.
+
+Se tiver escrito so inline vai dar errado pois não é mais um elemento de bloco, não conseguiremos configurar a largura da coluna, e a margem superior não funciona, tem que ser inline-block.
+
+No bootstrap: 
+
+d-block
+d-inline-block
+d-none
+
+
+E funciona todas as variantes de responsividade.
+
+d-print-none        //Removemos o cabeçalho quando fomos imprimir
+
+d-none d-print-block      //para não ser mostrado em tela & Para ser mostrado apenas na impressão
+
+invisible    //Deixa o elemento invisivel, mas o campo de visualização continua la sendo ocupado. 
+  -->

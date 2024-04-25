@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="container p-5">
+        <form action="">
+            <div class="mb-3 ">
+                <label class="form-label" for="email">Email
+                </label>
+                <input class="form-control"  type="email" id="email" placeholder="Digite seu e-mail">
+                        <div class="form-text">Nunca compartilharemos seus dados com terceiros.</div>
+                    </input>
+            </div>
+            <div class="mb-3 ">
+                <label class="form-label" for="senha">Senha
+                </label>
+                <input class="form-control" type="password" id="senha" placeholder="Digite sua senha">
+                </input>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" id="lembrar"></input>
+                <label class="form-check-label" for="lembrar">Lembrar de mim
+                </label>
+                
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <!-- Estilizar botão  -->
+        </form>
+        <hr>
+        <input type="file" id="arquivo" class="form-control">
+
+        <input type="color" id="cor" class="form-control-color">
+
+        <hr>
+        <div class="mb-3">
+            <label for="" class="form-label">Cidade</label>
+            <input type="text" class="form-control" list="cidades" placeholder="Digite para buscar...">
+                <datalist id="cidades">
+                    <option value="Cidade 1"></option>
+                    <option value="Cidade 2"></option>
+                    <option value="Cidade 3"></option>
+                    <option value="Cidade 4"></option>
+                    <option value="Cidade 5"></option>
+                    <option value="Cidade 6"></option>
+                </datalist>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--ESTILIZANDO FORMULÁRIOS 
+    CLASSE PARA TITULO DO CAMPO: form-label
+    CLASSE PARA O CAMPO EM SI: form-control 
+    CLASSE PARA TEXTO: form-text
+    CLASSE PARA INPUT CHECKBOX: form-check-input
+    CLASSE PARA TITULO DO CHECKBOX: form-check-label  
+
+    DEIXAR O CAMPO MAIOR OU MENOR:
+    form-control-lg    //maior que o padrao
+    form-control-sm    //menor que o padrao
+    form-control-plaintext //exibir com a aparencia de não editavel mais depois do primeiro cadastro
+
+
+
+Dicas:
+
+Se quiser desabilitar um campo digita disabled
+Para poder apenas selecionar o texto que esta dentro do campo usa readonly, e para adicionar algo ao campo vamos usar um value='email@email.com', e tambem o placeholder que foi oque deixamos. -->

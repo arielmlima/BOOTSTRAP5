@@ -1,0 +1,35 @@
+Nessa aula de Bootstrap, explica como configurar a visibilidade de elementos diferentes.
+
+É possível configurar a largura das colunas, margens e exibição de elementos em diferentes resoluções usando as classes disponíveis no framework.
+
+Também foi abordado como controlar a exibição de elementos em situações como impressão de páginas e transbordamento de conteúdo.
+
+Vamos trocar a classe de block das tres pela inline-block. 
+
+block: Não permite nada aos lados.
+inline-block: em linha.
+none: não exibir.
+
+Se tiver escrito so inline vai dar errado pois não é mais um elemento de bloco, não conseguiremos configurar a largura da coluna, e a margem superior não funciona, tem que ser inline-block.
+
+No bootstrap: 
+
+d-block
+d-inline-block
+d-none
+
+
+E funciona todas as variantes de responsividade.
+
+d-print-none        //Removemos o cabeçalho quando fomos imprimir
+
+d-none d-print-block      //para não ser mostrado em tela & Para ser mostrado apenas na impressão
+
+invisible    //Deixa o elemento invisivel, mas o campo de visualização continua la sendo ocupado. 
+
+
+
+overflow-auto            rolagem vertical (A barra de rolagem so é colocada se necessario, mesmo com o atributo).
+overflow-hidden          esconde o texto que passa
+overflow-visible         padrão
+overflow-scroll          rolagem vertical horizontal (Sempre visiveis)
