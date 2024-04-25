@@ -1,0 +1,5 @@
+Nesta aula, mostro como configurar diferentes layouts de formulário utilizando o Bootstrap. Os elementos do formulário são organizados de forma vertical, em pilha, e para separá-los utiliza-se margem inferior. É possível colocar os campos do formulário na mesma linha utilizando a técnica de classes dívida.
+
+Também é possível organizar os campos do formulário abaixo do elemento usando a classe margem inferior. Para ajustar o espaçamento, pode-se definir a quantidade de colunas que cada campo ocupa. Além disso, é possível definir o tamanho e o alinhamento dos títulos dos campos usando as classes Label.
+
+Foi apresentado um exemplo de formulário de cadastro de endereço com um layout moderno e sofisticado. Com o uso do Bootstrap, é possível ganhar produtividade na construção de formulários. 
