@@ -1,0 +1,5 @@
+De acordo com a documentação oficial, os cards são um tipo de conteúdo flexível e extensível. Eles incluem títulos, texto, imagens, links, formulários, botões e muito mais. A estrutura básica de um card é composta por um elemento que contém o conteúdo do cartão. Ele pode ser um div, uma section, um article, etc.
+
+Dentro do elemento-container, pode-se adicionar títulos, subtítulos, parágrafos, links, imagens e botões. Para definir a largura e altura do cartão, pode-se usar classes pré-definidas, como o mx-auto, que centraliza o elemento horizontalmente.
+
+Também pode-se usar o w-50, que define a largura como 50% do tamanho da tela. Os card groups podem ser usados para agrupar vários cartões e definir espaçamento entre eles.
