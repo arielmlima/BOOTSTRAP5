@@ -1,0 +1,5 @@
+Nesta aula, ensina como configurar três tipos diferentes de mensagens estilo notificações flutuantes com o Bootstrap.
+
+A classe "toast" é utilizada para criar a mensagem dentro de um container principal, com outra classe header seguida. É possível adicionar ícone, botão e inicialização automática. É necessário depender do JavaScript do Bootstrap para inicialização e funcionamento.
+
+Também é explicado como subir a mensagem e os botões com função de redirecionamento. No final, é apresentado o componente "popover" para usar flutuantes em diferentes posições da tela.
