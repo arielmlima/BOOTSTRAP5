@@ -1,0 +1,3 @@
+Neste vídeo, você aprenderá como criar e configurar um painel deslizante com Bootstrap.
+
+O componente Canvas depende do JavaScript do Bootstrap e não requer nenhum código para iniciar. Será mostrado como adicionar elementos ao painel e criar uma barra de navegação para abrir e fechar o Canvas. Também será explicado como permitir a rolagem do conteúdo dentro do painel, bem como configurar a largura do Canvas.
