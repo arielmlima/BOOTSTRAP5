@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <title>Carroseis de Slides</title>
+</head>
+
+<body>
+    <!-- Se quiser efeito de esmaecimento e não deslizamento escreve carousel-fade na classe -->
+    <div class="container py-5">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="ads">
+            <!-- Indicadores no carrosel -->
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="2"></button>
+            </div>
+            <!-- Imagens carrosel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Titulo do Slide 1</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, eos consequatur mollitia aliquid alias dolor perspiciatis labore sequi corrupti non officiis voluptate doloremque totam dolores deserunt aliquam eum! Ex nesciunt reprehenderit numquam minus repellat, neque at voluptates voluptate quaerat cum inventore natus vitae eveniet. Consectetur, possimus. Blanditiis fugit in saepe sunt non, commodi, numquam maxime cupiditate tempora dolores maiores eveniet fugiat! Alias aperiam adipisci doloribus, ipsam totam ipsum pariatur ipsa ratione placeat nesciunt dicta odio modi doloremque est. Atque, obcaecati magni. Consequatur deserunt perspiciatis omnis enim nisi illo doloribus, quia exercitationem, aut, officiis commodi ut corporis maiores quisquam fuga error. Eaque labore quod iure magnam ad officiis sit placeat. Quibusdam blanditiis id exercitationem sequi. Dolores assumenda fugit nihil cum sit reprehenderit eos tempora ad et vero dicta laudantium enim excepturi, quos aspernatur commodi hic alias voluptatum ratione adipisci. Vero eum consequatur error qui aspernatur ipsum aliquid. Nesciunt non veritatis architecto quasi voluptatem laboriosam. Quisquam blanditiis tenetur tempore explicabo, veniam laudantium odio id repellat iste, maxime quaerat culpa totam eius, necessitatibus voluptatibus aliquam non recusandae molestias voluptate reprehenderit cum aspernatur accusantium.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"data-bs-interval="1000">
+                    <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item"data-bs-interval="3000">
+                    <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100">
+                </div>
+            </div>
+            <!-- Botão Voltar -->
+            <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <!-- Botão avançar -->
+            <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            
+        </div>
+    </div>
+</body>
+
+</html>
+<!--Para cronometrar o tempo de cada slide, adiciona na div o atributo: data-bs-interval="3000"    //3seg
+                 "2000     //2seg
+                 "1000     //1seg
+
+
+
+
+Para desabilitar o touch  no celular, escreve na div carousel slide, o atributo: 
+
+data-bs-touch="false"  
+
+E podemos usar a classe carousel-dark, que vai funcionar melhor se a imagens forem mais claros"-->
+

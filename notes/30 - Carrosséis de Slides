@@ -1,0 +1,5 @@
+Nesta aula, ensina como criar carrosséis de slides usando Bootstrap.
+
+O primeiro passo é criar a classe "carousel". Em seguida, criar elementos "slide" dentro dessa classe. É possível adicionar botões para avançar e retroceder slides, bem como indicadores de qual slide está sendo exibido. Também é possível configurar o tempo de exibição de cada slide e personalizar o efeito de transição entre eles.
+
+Para dispositivos móveis, é possível desabilitar a passagem de slides por deslizamento. É possível adicionar textos e imagens nos slides e personalizar o fundo. Com essas dicas, é fácil criar carrosséis de slides responsivos e atraentes.
