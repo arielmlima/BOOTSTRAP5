@@ -1,0 +1,5 @@
+Nesta aula, veja como configurar mensagens de alerta e listas utilizando Bootstrap.
+
+Para criar uma caixa de alerta simples, é necessário criar classes de alerta e adicioná-las ao código. É possível colocar diferentes conteúdos dentro da caixa de alerta, como títulos e parágrafos. Para adicionar um botão de fechar, é necessário criar uma classe de botão e adicionar um atributo de desmissão.
+
+Também é possível criar notificações numéricas com um botão de ativar/desativar e listar elementos numerados ou personalizados. Por fim, é possível deixar o texto clicável e aplicar cores temáticas.
