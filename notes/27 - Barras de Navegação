@@ -1,0 +1,7 @@
+Nesse curso de Bootstrap, aprendemos como criar barras de navegação com uma aparência bastante profissional. Agora, vamos descobrir as técnicas específicas para a criação de barras de navegação interessantes em HTML5. Para começar, vamos adicionar uma classe para criar a barra de navegação com fundo Light.
+
+Adicionamos um elemento que representa nossa barra e, em seguida, adicionamos o conteúdo. Completo o código, ajustamos a margem. Para tornar o container responsivo, seguimos o Break Point da responsabilidade do Bootstrap e adicionamos uma classe fonte, além de margem à direita em unidades.
+
+Também adicionamos a marca do logotipo Bootstrap seguido por outros elementos centralizados na vertical. Depois, indicamos a classe da barra de navegação e adicionamos alguns elementos principais. Criamos uma classe chamada "collaps" e adicionamos outra dentro dessa classe, chamada "content". Com isso, definimos elementos para abrir, fechar e retrair. Em seguida, adicionamos um campo de pesquisa com um botão dedicado.
+
+Também adicionamos uma seta abaixo que indica a opção drop. Agregado o submenu com cinco elementos, adicionamos o formulário para o conjunto de itens. Finalizamos o código adicionando rodapé e um botão para fixar. Tudo isso em conjunto resulta em um layout de barra de navegação profissional e responsivo.
