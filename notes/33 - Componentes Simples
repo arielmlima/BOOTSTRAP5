@@ -1,0 +1,7 @@
+Nesta aula, aprenda como criar alguns componentes simples utilizando o Bootstrap Framework.
+
+O primeiro componente apresentado é o indicador de caminho, útil para mostrar ao usuário em que sessão ele se encontra. Também é apresentado como utilizar o Spinner, o indicador de carregamento e a barra de progresso para melhorar a experiência do usuário durante a interação.
+
+Além disso, é ensinado como utilizar botões, inclusive com a possibilidade de adicionar Spinners dentro deles, e como criar um painel ocultável com o Collapsible.
+
+Todos esses componentes podem ser amplamente utilizados em diversos contextos e ajudam a melhorar a navegação e visualização dos usuários.
